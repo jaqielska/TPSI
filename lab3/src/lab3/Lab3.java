@@ -62,7 +62,7 @@ public class Lab3 {
 	    
 	        Map<String, List<Student>> uczniowie = new HashMap<>();
                 uczniowie.put("32a",grupa32);
-                System.out.println(grupa32);
+                System.out.println(uczniowie.get("32a"));
                 
                try(BufferedReader in = new BufferedReader(new FileReader("plik.txt"))) 
                {
