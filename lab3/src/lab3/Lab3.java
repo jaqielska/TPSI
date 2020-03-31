@@ -52,8 +52,17 @@ public class Lab3 {
                 grupa32a.add(new Student("Basia","Jagielska","TPSI"));
                 grupa32a.add(new Student("Piotr","Wyczołek","TPSI"));
                 grupa32a.add(new Student("Jakub","Piechota","TPSI"));
+	    
+	    	List<Student> grupa3 = new ArrayList<>();
+                grupa3.add(new Student("Ola","Jagielska","TPSI"));
+                grupa3.add(new Student("Monika","Wyczołek","TPSI"));
+                grupa3.add(new Student("Zdzisław","Piechota","TPSI"));
                 
                 //System.out.println(osoby.get("programowanie obiektowe"));
+	    
+	        Map<String, List<Student>> uczniowie = new HashMap<>();
+                uczniowie.put("32a",grupa32);
+                System.out.println(grupa32);
                 
                try(BufferedReader in = new BufferedReader(new FileReader("plik.txt"))) 
                {
